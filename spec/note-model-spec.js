@@ -7,7 +7,10 @@ function textIsNotEmpty() {
 
 textIsNotEmpty();
 
-
+function canViewText() {
+  let note = new Note("Monday");
+  assert.isTrue(note.viewNote === "Monday");
+}
 // (function(exports) {
 //   function testTextInstantiation() {
 //     let note = new Note('My favourite language is JavaScript');

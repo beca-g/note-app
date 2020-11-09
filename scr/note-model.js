@@ -3,12 +3,11 @@
 class Note {
     constructor(text) {
         this.text = text;
-        this.notes = [];
     }
 
-    // addNotes(text){
-    //     this.notes.push(text)
-    // }
+    viewNote() {
+        return this.text
+    }
 
 }
 
