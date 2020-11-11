@@ -1,23 +1,19 @@
 "use strict";
+(function() {
+  let note = new Note("I will get better at Javascript");
 
-function textIsNotEmpty() {
-  let note = new Note("I hate JS");
-  assert.isTrue(note.text === "I hate JS");
-};
+  function textIsNotEmpty() {
 
-textIsNotEmpty();
+    assert.isTrue(note.text === "I will get better at Javascript");
+    console.log("Test passed: text is not empty");
+  };
+  textIsNotEmpty();
 
-function canViewText() {
-  let note = new Note("Monday");
-  assert.isTrue(note.viewNote === "Monday");
-}
-// (function(exports) {
-//   function testTextInstantiation() {
-//     let note = new Note('My favourite language is JavaScript');
+  function canViewText() {
+    assert.isTrue(note.viewNote() === "I will get better at Javascript");
+    console.log("Test passed: can view text")
+  }
 
-//     if (note.text !== 'My favourite language is JavaScript') {
-//       throw new Error(`Expected 'My favourite language is JavaScript' but got ${note.text}`)
-//     }
-//   };
-//   testTextInstantiation();
-// })(this);
+  canViewText();
+})(this);
+
