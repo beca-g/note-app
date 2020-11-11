@@ -14,4 +14,11 @@
   }
   canAddNotes();
 
+  function canViewNotes() {
+    noteList.add("My dog doesn't listen to me")
+    assert.isTrue(noteList.view()[1] === "My dog doesn't listen to me");
+    console.log("Test passed: Can view notes stored in the notes array")
+  }
+  canViewNotes();
+
 })(this);

@@ -6,4 +6,8 @@ class NoteList {
   add(text) {
     this.notes.push(text);
   }
+
+  view() {
+    return this.notes
+  }
 }
