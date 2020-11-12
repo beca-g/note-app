@@ -1,10 +1,12 @@
+'use strict';
+
 class NoteList {
   constructor() {
     this.notes = [];
   }
 
-  add(text) {
-    this.notes.push(text);
+  add(str) {
+    this.notes.push(str);
   }
 
   view() {

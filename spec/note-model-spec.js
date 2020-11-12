@@ -1,4 +1,5 @@
 "use strict";
+
 (function() {
   let note = new Note("I will get better at Javascript");
 
