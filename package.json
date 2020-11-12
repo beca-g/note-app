@@ -1,0 +1,26 @@
+{
+  "name": "note-app",
+  "version": "1.0.0",
+  "description": "A frontend, single page web app.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beca-g/note-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beca-g/note-app/issues"
+  },
+  "homepage": "https://github.com/beca-g/note-app#readme",
+  "dependencies": {
+    "hapi": "^18.1.0",
+    "http-server": "^0.12.3"
+  }
+}
