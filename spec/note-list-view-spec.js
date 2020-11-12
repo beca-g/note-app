@@ -12,4 +12,9 @@
   }
   hasNoteList();
 
+  function hasHtml() {
+    assert.isTrue(noteListView.createHtml(note)) === "<ul><li><div>Hello world</div><li><div>Ciao mondo</div></li></ul>"
+    console.log("Test passed: NoteListView has html")
+  }
+  hasHtml();
 })(this);
