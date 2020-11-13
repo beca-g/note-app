@@ -7,4 +7,9 @@
     console.log("Test passed: A SingleNoteView can be instantiated")
   }
   canBeInstantiated(); 
+
+  function canReturnHtml() {
+    assert.isTrue(singleNoteView.makeHtml() === "<div>Hello world</div>");
+  }
+  canReturnHtml();
 })();
