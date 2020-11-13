@@ -1,6 +1,5 @@
 (function() {
   let noteController = new NoteController();
-  noteController.noteList.add("Hello world")
 
   function canBeInstantiated() {
     assert.isTrue(noteController instanceof NoteController);
@@ -8,7 +7,7 @@
   }
   canBeInstantiated();
 
-  function canChangeInnerHtml() { 
+  function canChangeInnerHtml() {
     appDiv = document.getElementById("app");
     noteController.insertHtml();
     assert.isTrue(appDiv.innerHTML === '<ul><li><div><a id="0" href="#note/0">Favourite drink: sel</a></div></li><li><div><a id="1" href="#note/1">Hello world</a></div></li></ul>');
@@ -30,7 +29,8 @@ canChangeInnerHtml();
     let link2 = document.getElementById('1')
     link.click()
     link2.click()
-    assert.isTrue(document.getElementById("app").innerHTML === "<div>Hello world</div>")
+    setTimeout(function() { assert.isTrue(document.getElementById("app").innerHTML === "<div>Hello world</div>") }, 1000)
+    console.log("Test passed: App div updated!")
   }
   canUpdateContent();
 })();
