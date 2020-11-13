@@ -1,12 +1,13 @@
 'use strict';
 
 class Note {
-    constructor(text) {
-        this.text = text;
-    }
+  constructor(text, id) {
+    this.text = text;
+    this.id = id;
+  }
 
-    viewNote() {
-        return this.text
-    }
+  viewNote() {
+    return this.text
+  }
 
 }

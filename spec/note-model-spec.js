@@ -1,14 +1,13 @@
 "use strict";
 
 (function() {
-  let note = new Note("I will get better at Javascript");
+  let note = new Note("I will get better at Javascript", 0);
 
-  function textIsNotEmpty() {
-
-    assert.isTrue(note.text === "I will get better at Javascript");
+  function textIsNotEmptyAndHasID() {
+    assert.isTrue(note.text === "I will get better at Javascript", 0);
     console.log("Test passed: text is not empty");
   };
-  textIsNotEmpty();
+  textIsNotEmptyAndHasID();
 
   function canViewText() {
     assert.isTrue(note.viewNote() === "I will get better at Javascript");
