@@ -3,8 +3,6 @@
 class NoteController {
   constructor(noteList = new NoteList()) {
     this.noteList = noteList;
-    this.noteList.add("Favourite drink: seltzer");
-    this.noteList.add("Hello world")
     this.noteListView = new NoteListView(this.noteList);
   }
 
@@ -28,7 +26,8 @@ function getNoteFromUrl() {
 }
 
 function showNote(id) {
-  let noteContent = insertNote.noteList.view()[id].viewNote()
+  console.log(noteController.noteList())
+  let noteContent = noteController.noteList.view()[id].viewNote()
   document.getElementById("app").innerHTML = `<div>${noteContent}</div>`;
 }
 
@@ -36,6 +35,7 @@ function logSubmitEvents() {
   document.querySelector("#text").addEventListener("submit", function(event) {
     event.preventDefault();
     console.log(event);
+    console.log(document.querySelector('#newNote').value)
   })
 }
 
@@ -43,6 +43,7 @@ let insertNote = new NoteController;
 insertNote.insertHtml();
 makeUrlChange();
 logSubmitEvents();
+
 
 
 
