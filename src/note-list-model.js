@@ -6,10 +6,11 @@ class NoteList {
   }
 
   add(str) {
-    this.notes.push(str);
+    let note = new Note(str);
+    this.notes.push(note);
   }
 
   view() {
-    return this.notes
+    return this.notes;
   }
 }
