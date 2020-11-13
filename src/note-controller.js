@@ -10,9 +10,6 @@ class NoteController {
   insertHtml() {
     let element = document.getElementById("app");
     let str = this.noteListView.createHtml();
-    console.log(element);
-    console.log(this.noteListView)
-    console.log(this.noteListView.createHtml());
     element.innerHTML = str;
   }
 }
