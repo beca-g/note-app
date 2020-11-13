@@ -23,4 +23,11 @@
   }
   canViewNotes();
 
+  function notesHaveIds() {
+    assert.isTrue(noteList.view().length === 2);
+    assert.isTrue(noteList.view()[0].id === 0);
+    assert.isTrue(noteList.view()[1].id === 1);
+    console.log("Test passed: Notes have ID's")
+  }
+  notesHaveIds();
 })(this);
