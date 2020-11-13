@@ -2,7 +2,7 @@
 
 (function() {
   let note = new NoteList();
-  note.add("Hello world");
+  note.add("Hello world, today is a lovely day");
   note.add("Ciao mondo");
   let noteListView = new NoteListView(note);
 
@@ -13,7 +13,7 @@
   hasNoteList();
 
   function hasHtml() {
-    assert.isTrue(noteListView.createHtml()) === "<ul><li><div>Hello world</div><li><div>Ciao mondo</div></li></ul>"
+    assert.isTrue(noteListView.createHtml()) === "<ul><li><div>Hello world, today i</div><li><div>Ciao mondo</div></li></ul>"
     console.log("Test passed: NoteListView has html")
   }
   hasHtml();
